@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "trinketenderchest",
+  "version": "${version}",
+  "name": "Trinket Ender Chest",
+  "description": "Allows the player to wear an Ender Chest as a back trinket for easier access and management.",
+  "authors": ["Nicobla"],
+  "contact": {
+    "homepage": "",
+    "sources": "",
+    "issues": ""
+  },
+  "license": "LGPLv3.0",
+  "icon": "assets/trinketenderchest/trinketenderchest_icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "top.nicobla.trinketenderchest.common.TrinketEnderChestMod"
+    ],
+    "client": [
+      "top.nicobla.trinketenderchest.client.TrinketEnderChestClientMod"
+    ],
+    "cardinal-components-item": [
+      "top.nicobla.trinketenderchest.common.TrinketEnderChestMod"
+    ]
+  },
+  "custom": {
+    "cardinal-components": [
+      "trinketenderchest:ender_chest"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "minecraft": "1.18.x",
+    "trinkets": "*"
+  }
+}
